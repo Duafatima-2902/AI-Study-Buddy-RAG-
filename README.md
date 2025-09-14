@@ -1,62 +1,71 @@
 📚 AI Study Bot (Flask + LangChain + Gemini RAG)
 
 An AI-powered Study Assistant built with Flask, LangChain, FAISS, HuggingFace embeddings, and Google Gemini API.
-This app allows you to upload PDFs or text files, automatically build a knowledge index, and ask natural language questions with structured, well-formatted answers.
+
+Upload PDFs or text files 📂, automatically build a knowledge index 🗂️, and ask natural language questions 🤖 with structured, well-formatted answers.
 
 ✨ Features
 
-📂 Upload PDFs or text files as knowledge base
+📂 Upload PDFs or text files as a knowledge base
 
-🔍 FAISS vector search for fast document retrieval
+🔍 FAISS vector search for lightning-fast document retrieval
 
-🧠 HuggingFace embeddings (all-MiniLM-L6-v2) for semantic search
+🧠 HuggingFace embeddings (all-MiniLM-L6-v2) for semantic similarity
 
-🤖 Google Gemini API for structured answers (Markdown headings, bullet points, examples)
+🤖 Google Gemini API for structured AI answers (Markdown headings, bullets, examples)
 
-🎨 Flask web UI with endpoints for file upload and Q&A
+🎨 Flask web UI with REST endpoints
 
-📝 Answers are well-structured:
+📝 Structured Answers always include:
 
-Definition
+✅ Definition
 
-Key Concepts
+✅ Key Concepts
 
-Detailed Explanation
+✅ Detailed Explanation
 
-Example
+✅ Example
 
-Summary
+✅ Summary
 
 ⚙️ Tech Stack
 
-Python 3.10+
+🐍 Python 3.10+
 
-Flask
+🌐 Flask
 
-LangChain
+🔗 LangChain
 
-FAISS
+📊 FAISS
 
-HuggingFace Sentence Transformers
+🤗 HuggingFace Sentence Transformers
 
-Google Gemini
+🌟 Google Gemini API
 
 🛠️ Installation & Setup
-1. Clone Repository
-git clone https://github.com/your-username/ai-study-bot.git
+1️⃣ Clone Repository
+git clone https://github.com/Duafatima-2902/AI-Study-Buddy-RAG-.git
 cd ai-study-bot
 
-2. Create Virtual Environment
+2️⃣ Create Virtual Environment
 python -m venv AiStudyBot
-# Activate (Windows)
+
+
+Activate it:
+
+Windows
+
 AiStudyBot\Scripts\activate
-# Activate (Linux/Mac)
+
+
+Linux/Mac
+
 source AiStudyBot/bin/activate
 
-3. Install Dependencies
+3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4. Setup Environment Variables
+4️⃣ Setup Environment Variables
 
 Create a .env file in the project root:
 
@@ -69,23 +78,23 @@ Start Flask server:
 python app.py
 
 
-App runs at:
+App will run at:
 👉 http://127.0.0.1:8000
 
 📡 API Endpoints
-1. Home
+🏠 Home
 GET /
 
 
 Loads the frontend (index.html).
 
-2. Upload Files
+📂 Upload Files
 POST /upload
 
 
 Upload PDFs or text files for indexing.
 
-Example (cURL):
+Example:
 
 curl -X POST -F "files=@notes.pdf" http://127.0.0.1:8000/upload
 
@@ -97,7 +106,7 @@ Response:
   "docs": 12
 }
 
-3. Ask a Question
+❓ Ask a Question
 POST /ask
 
 
@@ -121,23 +130,24 @@ Response:
 
 🧪 Example Output
 
-When you ask:
+Input:
 
-{"question": "Explain SSDLC"}
+{"question": "Explain Phases of penetration testing"}
 
 
-Answer will be structured:
+Answer:
+<img width="1917" height="862" alt="image" src="https://github.com/user-attachments/assets/28acf2e5-9ef6-458d-b765-e5aa0d34bfab" />
 
 ## Definition
-Secure Software Development Life Cycle (SSDLC) is ...
+Phases of penetration testing are ...
 
 ## Key Concepts
-● **Proactive Security** – Security integrated early  
-● **Reduced Vulnerabilities** – Less risk in final product  
+● **Proactive Security** – Integrated early  
+● **Reduced Vulnerabilities** – Lower risks in final product  
 ● **Cost Savings** – Fix issues early  
 
 ## Detailed Explanation
-...
+... (structured breakdown)
 
 ## Example
 Imagine a mobile banking app...
@@ -163,7 +173,7 @@ ai-study-bot/
 
 ✅ Structured answers (headings + bullets)
 
-🔄 Add authentication (optional)
+🔄 Add authentication (JWT/Session-based)
 
 🔄 Improve UI with Bootstrap/Tailwind
 
@@ -171,4 +181,13 @@ ai-study-bot/
 
 🤝 Contributing
 
-Pull requests are welcome! If you’d like to contribute, please fork the repo and create a feature branch.
+Pull requests are welcome!
+If you’d like to contribute:
+
+Fork the repo
+
+Create a feature branch
+
+Commit changes
+
+Open a PR 🎉
